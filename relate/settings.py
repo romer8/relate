@@ -222,7 +222,9 @@ DATABASES = {
 
 # {{{ internationalization
 
-LANGUAGE_CODE = "en-us"
+# LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = local_settings.get("LANGUAGE_CODE")
+print(LANGUAGE_CODE)
 
 USE_I18N = True
 
